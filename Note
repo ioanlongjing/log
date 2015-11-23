@@ -1,7 +1,12 @@
 [ Note ]
 2015/11/08
+
 ... 我還是比較習慣用Shell Script, 當版本號為X.X.X.X 時
 用Python 撈IP會連版本號一起撈出來
 Shell Script 的解法為
 $ grep '^[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}' log.txt -o | sort | uniq -c
 但Python 用^ 似乎會變成只撈第一筆, 目前不知道解決方法
+
+2015/11/23
+最後還是用shell script 了 XDD
+
