@@ -1,4 +1,10 @@
 #!/usr/bin/env bash
-directory='Log/'
-ls $directory
-cat `find $directory -iname "*"`
+source ip.sh
+
+directory='Log'
+#ls $directory
+# 因為有時會一次檔案過大, 用find 分開檔案
+#echo " `find $directory -iname "*"`"
+
+check_ip
+
